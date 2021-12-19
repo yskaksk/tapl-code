@@ -27,3 +27,16 @@ setup.log
 
 # Local OPAM switch
 _opam/
+
+
+# rust
+target/
+Cargo.lock
+**/*.rs.bk
+
+/target
+
+output/*
+!output/.keep
+
+.DS_Store
