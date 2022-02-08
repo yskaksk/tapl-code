@@ -141,7 +141,7 @@ fn eval(ctx: &Context, t: &Term) -> Term {
         TmApp { lterm, rterm } => {
             let v2 = eval(ctx, rterm.as_ref());
             match eval(ctx, lterm.as_ref()) {
-                TmAbs { term, name: _ } => termSubstTop(&v2, term.as_ref()),
+                TmAbs { term, name: _ } => eval(ctx, &termSubstTop(&v2, term.as_ref())),
                 _ => panic!() // ありえないはず
             }
         }
