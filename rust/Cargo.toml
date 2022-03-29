@@ -18,3 +18,7 @@ path = "ch7/bigstep.rs"
 [[example]]
 name = "ch10"
 path = "ch10/type.rs"
+
+[[example]]
+name = "ch11"
+path = "ch11/letexercise.rs"
